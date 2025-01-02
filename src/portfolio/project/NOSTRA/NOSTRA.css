@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.navbar-links ul{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+}
+.navbar-links a:hover{
+    color: black;
+    font-weight: 700;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+/* Side navbar */
+.side-navbar{
+    background-color: #1D232C;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    padding: 20px;
+    color: white;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-link a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-link a:hover{
+    font-weight: 900;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.header-button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: white;
+    cursor: pointer;
+}
+/* services */
+.service{
+    padding: 20px;
+}
+.service-container1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.service-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service-container2 div{
+    background-color: #F2F4F7;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* New Arrival */
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival button{
+    padding: 5% 10%;
+    margin-top: 10px;
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.news input{
+    padding: 10px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: 3px solid black;
+}
+.news button{
+    margin-top: 10px;
+    color: white;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D232C;
+    color: white;
+
+}
+/* product section */
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.products-box img{
+    border-radius: 10px;
+}
+
+/* Contact Page */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container{
+    background-color: #1D232C;
+    width: 70vw;
+    padding: 40px;
+    border-radius: 10px;
+}
+.contact-container div{
+    margin-top:15px;
+}
+.contact-container input,textarea{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.contact-container textarea{
+    padding-top: 5px;
+    font-size: 17px;
+    height:80px ;
+}
+.contact-container input,textarea:focus{
+    outline: none;
+
+}
+.contact-container h1{
+    color: white;
+}
+.contact-container p{
+    color: rgb(230, 224, 224);
+}
+.contact-container button{
+    margin-top: 10px;
+    padding: 7px 12px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media Quary */
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle{
+        display:block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container1{
+        display: none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+    .contact-container input{
+        height:35px;
+        font-size: 12px;
+    }
+    .contact-container textarea{
+        height: 50px;
+    }
+    .contact-container .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-container  button{
+        padding: 10px 25px;
+    }
+}
