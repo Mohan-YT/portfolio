@@ -264,7 +264,7 @@ const[text] = useTypewriter({
                         <a href="https://www.facebook.com/profile.php?id=100028216896503"><i className="bi bi-facebook"></i></a>
                         <a href="https://wa.me/+919750063883"><i className="bi bi-whatsapp"></i></a>
                         <a href="tel:9750063883"><i className="bi bi-telephone-fill"></i></a>
-                        <a href="https://www.linkedin.com/in/s-mohan-prasanth"><i className="bi bi-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/s-mohan-prasanth/"><i className="bi bi-linkedin"></i></a>
                         <a href="https://t.me/Mohan3883"><i className="bi bi-telegram"></i></a>
                     </div>
                 </div>
