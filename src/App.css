@@ -317,11 +317,11 @@ section{
   flex-direction: column;
 }
 .skills-boxes .skill-box{
-  width: 145px;
-  height: 145px;
+  width: 140px;
+  height: 140px;
   background-color: rgba(0, 0, 0, 0.363);
   padding: 15px;
-  margin: 13px 13px 35px;
+  margin: 13px 13px 55px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,7 +505,7 @@ section{
   width: 125px;
   height: 125px;
   padding: 15px;
-  margin: 7px 7px 40px;
+  margin: 10px 10px 50px;
  }
  .skills-boxes .skill-box div{
   line-height: 20px;
@@ -536,11 +536,15 @@ section{
 
 @media screen and (min-width:577px) and (max-width:768px) {
   /* Navigation */
+
   .navigation .nav-head .nav-title{
       background-color: transparent;
       padding-bottom: 0;
       margin: 0;
   }
+   .navigation .main-nav-box{
+    height: 85vh;
+   }
   .nav-title img{
       display: block;
       width: 55px;
@@ -568,6 +572,7 @@ section{
       justify-content: center;
       align-items: center;
       width: 60px;
+      margin: 5px;
   }
   .nav-list a{
       margin-bottom: 0px;
@@ -576,10 +581,12 @@ section{
   /* Home Page */
   .home-box{
       width: 77%;
+      height: 85vh;
   }
   /* About Page */
   .about-main-box{
       width: 77%;
+      height: 85vh;
   }
   .about-head{
       height: 390px;
@@ -591,12 +598,13 @@ section{
   /* Skills Page */
   .main-skills{
       width: 77%;
+      height: 85vh;
   }
   .skills-boxes .skill-box{
-      width: 120px;
-      height: 120px;
+      width: 118px;
+      height: 118px;
       padding: 10px;
-      margin: 15px 5px 33px;
+      margin: 15px 5px 37px;
   }
   .skills-boxes .skill-box div{
       line-height: 18px;
@@ -607,10 +615,12 @@ section{
   /* Project Page */
   .project-main{
       width: 77%;
+      height: 85vh;
   }
   /* Contact Page */
   .contact-main{
       width: 77%;
+      height: 85vh;
   }
   .contact-box .contact-btn{
       width: 170px;
@@ -626,18 +636,31 @@ section{
   main{
       flex-direction: column;
   }
+  .reavel{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+.reavel.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
   /* Navigation */
   .navigation{
       position:static;
       justify-content: start;
       height: auto;
+      padding: 0 0;
   }
   .navigation .main-nav-box{
-      width: 95vw;
+      width: 100vw;
       position: sticky;
       height: auto;
       top: 0;
       left: 0;
+     padding: 0;
+     margin: 0;
   }
   .navigation .nav-head .nav-title{
       background-color: transparent;
@@ -674,13 +697,16 @@ section{
   /* Home Page */
   .home{
       justify-content: center;
-      height:auto;
-      margin: 10px 0;
+      height:85vh;
+      margin: 0;
   }
   .home-box{
-      padding: 10px 0;
+    height: 80vh;
+      
       width: 100%;
-      height:fit-content;
+      padding:10px 0;
+      margin: 0;
+      /* height:fit-content; */
   }
   .home-box h1{
       font-size: 26px;
@@ -703,7 +729,7 @@ section{
       justify-content: center;
       align-items: center;
       height: auto;
-      margin: 10px 0;
+      margin: 0;
   }
   .about-main-box{
       width: 100%;
@@ -713,7 +739,7 @@ section{
       align-items: center;
       flex-wrap: wrap;
       overflow-y:auto;
-      margin: 0;
+      margin: 10px 0;
       padding:10px 0;
   }
  
@@ -733,27 +759,29 @@ section{
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 280px;
-      height: 400px;
+      width: 270px;
+      height: 350px;
       margin-top: 20px;
   }
   /* Skills Page */
   .skills{
       justify-content: center;
       height: auto;
-      margin: 10px 0;
+      margin: 0;
+      height: 100vh;
   }
   .main-skills{
       width: 100%;
       height:auto;
-      padding: 25px 5px;
-      overflow: auto;
+      overflow: hidden;
+      margin:  0 ;
+      padding: 0 ;
   }
   .skills-container{
-      padding-top: 10px;
       flex-direction: column;  
       overflow-y:visible;
       width: 100%;
+      height: 88vh;
   }
   .skills-boxes{
       display: flex;
@@ -764,30 +792,34 @@ section{
       width: 100%;
   }
   .skills-boxes .skill-box{
-      width: 150px;
-      height: 150px;
-      margin: 25px;
+      width: 100px;
+      height: 100px;
+      margin:10px 22px  10px 21px;
+  }
+  .skill-box i{
+    font-size: 40px !important;
   }
   /* Porject Page */
   .projects{
       justify-content: center;
       height: auto;
-      margin: 10px 0;
+      margin: 0;
   }
   .project-main{
       padding-top: 10px;
       width: 100%;
       height: auto;
+      margin:10px 0 !important;
   }
   /* Contact Page */
   .contacts{
       justify-content: center;
-      height: auto;
-      margin: 10px 0;
+      height: 100vh;
+      margin: 0;
   }
   .contact-main{
       width: 100%;
-      height:auto;
+      height:95vh;
   }
   .contact-icon i{
       margin: 10px 15px;

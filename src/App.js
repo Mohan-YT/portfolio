@@ -44,6 +44,19 @@ const[text] = useTypewriter({
       setIsMenuVisible((prev) => !prev);
     };
 
+    window.addEventListener('scroll',function reveal(){
+        let reveals = this.document.querySelectorAll('.reavel');
+        for(let i = 0; i< reveals.length; i++){
+            let windowHeigth = this.window.innerHeight;
+            let revealtop = reveals[i].getBoundingClientRect().top;
+            let revealPoint = 70;
+            if(revealtop < windowHeigth-revealPoint){
+                reveals[i].classList.add('active');
+            }else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    });
 
   return (
 
@@ -90,7 +103,7 @@ const[text] = useTypewriter({
 
 <main>
             {/*  Home Page */}
-        <section className="home container-fluid" id="home">
+        <section className="home container-fluid " id="home">
             <div className="home-box p-sm-2">
                 <img src={mohan2} alt="My Picture" />
                 <h1>S MOHAN <span className="text-primary">PRASANTH</span></h1>
@@ -102,7 +115,7 @@ const[text] = useTypewriter({
             </div>
         </section>
             {/* About Page */}
-        <section className="about container-fluid" id="about">
+        <section className="about container-fluid reavel" id="about">
             <div className="about-main-box p-sm-3">
                 <div className="about-head mx-2">
                     <h1 className="text-primary border-bottom border-dark border-2 d-inline-block">About Us</h1>
@@ -120,7 +133,7 @@ const[text] = useTypewriter({
             </div>
         </section>
             {/*skills page */}
-        <section className="skills container-fluid" id="skill">
+        <section className="skills container-fluid reavel" id="skill">
             <div className="main-skills p-sm-2 d-flex flex-column ">
                 <h1 className="text-primary border-bottom border-2 border-dark d-inline-block">Skills</h1>
                 <div className="skills-container ">
@@ -129,14 +142,12 @@ const[text] = useTypewriter({
                                     <div>
                                         <i className="fa-brands fa-html5"></i>
                                         <p className="p1">HTML 5</p>
-                                        <p className="p2"> 84% </p>
                                     </div>
                                 </div>
                                 <div className="skill-box p-2">
                                 <div>
                                         <i className="fa-brands fa-css3"></i>
                                         <p className="p1">CSS</p>
-                                        <p className="p2"> 84% </p>
                                 </div>
                                 </div>
                         </div>
@@ -145,7 +156,6 @@ const[text] = useTypewriter({
                                 <div>
                                     <i className="fa-brands fa-react"></i>
                                     <p className="p1">REACK JS</p>
-                                    <p className="p2"> 84% </p>
                                 </div>
                             </div>
                          </div>
@@ -154,14 +164,12 @@ const[text] = useTypewriter({
                                     <div>
                                         <i className="fa-brands fa-bootstrap"></i>
                                         <p className="p1">BOOTSRAP 5</p>
-                                        <p className="p2"> 87% </p>
                                     </div>
                                 </div>
                                 <div className="skill-box p-2">
                                 <div>
                                         <i className="fa-brands fa-js"></i>
                                         <p className="p1">JAVASCRIPT</p>
-                                        <p className="p2"> 84% </p>
                                 </div>
                                 </div>
                         </div>
@@ -170,7 +178,7 @@ const[text] = useTypewriter({
             </div>
         </section>
              {/* project page  */}
-        <section className="projects container-fluid" id="project">
+        <section className="projects container-fluid reavel" id="project">
             <div className="project-main row py-sm-3">
 
                 <h1 className="text-primary border-bottom border-2 border-dark">Projects</h1>
@@ -184,7 +192,7 @@ const[text] = useTypewriter({
                         <div className="box-img">
                             <a href="project/Baby Care/BabyCare.html"><img src={Babycare} alt="" className="img-fluid" /></a>
                         </div>
-                        <a href="project/Baby Care/BabyCare.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-5 py-2">LIVE-DEMO</a>
+                        <a href="project/Baby Care/BabyCare.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>
                     </div>
 
                     <hr className="d-lg-none text-white fs-3 fw-3" />
@@ -196,7 +204,7 @@ const[text] = useTypewriter({
                         <div className="box-img">
                             <a href="project/Calculater/demo-calculator.html"><img src={Calculater} alt="" className="img-fluid" /></a>
                         </div>
-                        <a href="project/Calculater/demo-calculator.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-5 py-2">LIVE-DEMO</a>    
+                        <a href="project/Calculater/demo-calculator.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>    
                     </div>
                     <div className="box-p col-12 col-lg-6 text-start ms-auto text-white">
                         <h3 className="border-bottom border-2 border-primary text-primary">CALCULATER</h3>
@@ -216,7 +224,7 @@ const[text] = useTypewriter({
                         <div className="box-img">
                             <a href="project/NOSTRA/NOSTRA.html"><img src={NOSTRA} alt="" className="img-fluid" /></a>
                         </div>
-                        <a href="project/NOSTRA/NOSTRA.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-5 py-2">LIVE-DEMO</a>    
+                        <a href="project/NOSTRA/NOSTRA.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>    
                     </div>
 
                     <hr className="d-lg-none text-white fs-3 fw-3" />
@@ -228,7 +236,7 @@ const[text] = useTypewriter({
                         <div className="box-img">
                             <a href="project/BOOKSKY/booksky.html"><img src={BOOKSKY} alt="" className="img-fluid" /></a>
                         </div>
-                        <a href="project/BOOKSKY/booksky.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-5 py-2">LIVE-DEMO</a>    
+                        <a href="project/BOOKSKY/booksky.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>    
                     </div>
                     <div className="box-p col-12 col-lg-6 text-start ms-auto text-white">
                         <h3 className="border-bottom border-2 border-primary text-primary">BOOKSKY(TO-DO LIST)</h3>
@@ -239,7 +247,7 @@ const[text] = useTypewriter({
             </div>
         </section>
             {/* contact page */}
-        <section className="contacts container-fluid" id="contact">
+        <section className="contacts container-fluid reavel" id="contact">
             <div className="contact-main d-flex flex-column">
                 <h1 className="text-primary border-bottom border-2 border-dark">Contact</h1>
                 <div className="contact-box ">
