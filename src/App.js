@@ -49,7 +49,7 @@ const[text] = useTypewriter({
         for(let i = 0; i< reveals.length; i++){
             let windowHeigth = this.window.innerHeight;
             let revealtop = reveals[i].getBoundingClientRect().top;
-            let revealPoint = 70;
+            let revealPoint = 40;
             if(revealtop < windowHeigth-revealPoint){
                 reveals[i].classList.add('active');
             }else{
