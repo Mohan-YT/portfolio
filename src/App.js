@@ -2,12 +2,11 @@
 import './App.css';
 import pinterest from './portfolio/images/pinterest.png'
 import mohan2 from './portfolio/images/mohan-2.jpeg'
-import mohan3 from './portfolio/images/mohan-3.jpg'
-import gokul3 from './portfolio/images/gokul-3.png'
+import mohan1 from './portfolio/images/mohan-1.jpg'
 import Babycare from './portfolio/images/project image/baby care.png'
 import Calculater from './portfolio/images/project image/calculater.png'
-import NOSTRA from './portfolio/images/project image/NOSTRA.png'
-import BOOKSKY from './portfolio/images/project image/BOOKSKY.png'
+import FASTYBUY from './portfolio/images/project image/fastybuy.png'
+import CLOCK from './portfolio/images/project image/clock.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useTypewriter ,Cursor } from 'react-simple-typewriter';
@@ -76,7 +75,7 @@ const[text] = useTypewriter({
                         </div>
                     </div>
                          <div className= "nav-list gap-md-3  fs-4" id="nav-list"  style={{display: isMobile ? (isMenuVisible ? 'flex' : 'none') : 'flex'}} >
-                                <a className="btns fs-5 active" href="#home">
+                                <a className="btns fs-5 " href="#home">
                                     <i className="bi bi-house-door-fill pe-2"></i>
                                    <span>Home</span>
                                 </a>
@@ -110,7 +109,7 @@ const[text] = useTypewriter({
                 <p className="home-p fs-2">I'm a <span className="auto-type">{text}</span><Cursor cursorStyle="|" /></p>
                 <div className="row btn-box">
                     <a href="#" className=" col-md-5 btn-1 border-white m-2">Hire Me</a>
-                    <a href="resume/Minimalist Clean Signature CV Resume.pdf"  className="col-md-5 btn-2 border-white m-2">Download CV</a>
+                    <a href="/resume/mohanprasanth.pdf"  className="col-md-5 btn-2 border-white m-2">Download CV</a>
                 </div>
             </div>
         </section>
@@ -128,7 +127,7 @@ const[text] = useTypewriter({
                     </div>
                 </div>
                 <div className="about-img mx-2">
-                    <img src={gokul3} alt="My Pic" />
+                    <img src={mohan1} alt="My Pic" />
                 </div> 
             </div>
         </section>
@@ -190,9 +189,9 @@ const[text] = useTypewriter({
                     </div>
                     <div className="project-img col-12 col-lg-6 m-auto">
                         <div className="box-img">
-                            <a href="project/Baby Care/BabyCare.html"><img src={Babycare} alt="" className="img-fluid" /></a>
+                            <a href="https://babycare-clone.netlify.app"><img src={Babycare} alt="" className="img-fluid" /></a>
                         </div>
-                        <a href="project/Baby Care/BabyCare.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>
+                        <a href="https://babycare-clone.netlify.app" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>
                     </div>
 
                     <hr className="d-lg-none text-white fs-3 fw-3" />
@@ -202,9 +201,9 @@ const[text] = useTypewriter({
                 <div className="project-boxes row col-12 py-4">
                     <div className="project-img col-12 col-lg-6 m-auto">
                         <div className="box-img">
-                            <a href="project/Calculater/demo-calculator.html"><img src={Calculater} alt="" className="img-fluid" /></a>
+                            <a href="https://calclator-app.netlify.app"><img src={Calculater} alt="" className="img-fluid" /></a>
                         </div>
-                        <a href="project/Calculater/demo-calculator.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>    
+                        <a href="https://calclator-app.netlify.app" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>    
                     </div>
                     <div className="box-p col-12 col-lg-6 text-start ms-auto text-white">
                         <h3 className="border-bottom border-2 border-primary text-primary">CALCULATER</h3>
@@ -217,14 +216,14 @@ const[text] = useTypewriter({
 
                 <div className="project-boxes row col-12 py-4">
                     <div className="box-p col-12 col-lg-6 text-start ms-auto text-white">
-                        <h3 className="border-bottom border-2 border-primary text-primary">NOSTRA</h3>
-                        <p> The Dress Collection webpage is an interactive online catalog designed to showcase a variety of stylish dresses available for purchase. Built using <span className="fw-bolder">HTML</span>, <span className="fw-bolder">CSS</span>, and <span className="fw-bolder">JavaScript</span>, the website offers users a visually appealing and user-friendly platform to browse through different categories of dresses.This project emphasizes the importance of clean design, responsive layout, and effective use of interactive elements to enhance the user experience.</p>
+                        <h3 className="border-bottom border-2 border-primary text-primary">FASTYBUY</h3>
+                        <p> The FastyBuy webpage is an interactive online shopping platform designed to offer a seamless experience for purchasing a wide range of products, including dresses, toys, fruits, and vegetables. Built exclusively with <span className="fw-bolder">React.js</span>, the website provides users with a dynamic, responsive, and user-friendly interface. This project highlights the importance of efficient component-based design, state management, and interactive features to enhance the online shopping experience.</p>
                     </div>
                     <div className="project-img col-12 col-lg-6 m-auto">
                         <div className="box-img">
-                            <a href="project/NOSTRA/NOSTRA.html"><img src={NOSTRA} alt="" className="img-fluid" /></a>
+                            <a href="https://fastybuy.netlify.app"><img src={FASTYBUY} alt="" className="img-fluid" /></a>
                         </div>
-                        <a href="project/NOSTRA/NOSTRA.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>    
+                        <a href="https://fastybuy.netlify.app" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>    
                     </div>
 
                     <hr className="d-lg-none text-white fs-3 fw-3" />
@@ -234,13 +233,13 @@ const[text] = useTypewriter({
                 <div className="project-boxes row col-12 py-4">
                     <div className="project-img col-12 col-lg-6 m-auto">
                         <div className="box-img">
-                            <a href="project/BOOKSKY/booksky.html"><img src={BOOKSKY} alt="" className="img-fluid" /></a>
+                            <a href="https://clockandtimer.netlify.app"><img src={CLOCK} alt="" className="img-fluid" /></a>
                         </div>
-                        <a href="project/BOOKSKY/booksky.html" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>    
+                        <a href="https://clockandtimer.netlify.app" className="btn live-btn fw-bold border border-2 rounded-0 m-4 px-md-5 py-2">LIVE-DEMO</a>    
                     </div>
                     <div className="box-p col-12 col-lg-6 text-start ms-auto text-white">
-                        <h3 className="border-bottom border-2 border-primary text-primary">BOOKSKY(TO-DO LIST)</h3>
-                        <p>BOOKSKY web application is a simple yet functional productivity tool built using <span className="fw-bolder">HTML</span>, <span className="fw-bolder">CSS</span>, and <span className="fw-bolder">JavaScript</span>. This webpage allows users to create, manage, and track their tasks in an easy-to-use and interactive interface.</p>
+                        <h3 className="border-bottom border-2 border-primary text-primary">CLOCK & TIMER</h3>
+                        <p> The Clock and Timer web application is a simple yet functional productivity tool built using <span className="fw-bolder">HTML</span>, <span className="fw-bolder">CSS</span>, and <span className="fw-bolder">JavaScript</span>. This webpage allows users to track time effectively with features such as a real-time clock, countdown timer, and stopwatch, all within an intuitive and interactive interface.</p>
                     </div>
                    
                 </div>
@@ -252,7 +251,7 @@ const[text] = useTypewriter({
                 <h1 className="text-primary border-bottom border-2 border-dark">Contact</h1>
                 <div className="contact-box ">
                     <div className="contact-img">
-                        <img src={mohan3} alt="" />
+                        <img src={mohan2} alt="" />
                     </div>
                     <div>
                         <p className="fs-4 fw-bolder text-white w-75  mx-auto">If you'd like to get in touch, feel free to send me a message!</p>
